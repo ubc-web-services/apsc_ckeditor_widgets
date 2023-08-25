@@ -1,0 +1,52 @@
+/* text colours */
+.text-white {
+  color: #fff;
+}
+
+.text-grey-100 {
+  color: #f5f5f5;
+}
+
+.text-unit-primary {
+  color: var(--color-primary);
+}
+
+.text-unit-secondary {
+  color: var(--color-secondary);
+}
+
+.text-unit-tertiary {
+  color: var(--color-tertiary);
+}
+
+.text-unit-accent {
+  color: var(--color-accent);
+}
+
+.text-ubc-blue {
+  color: #002145;
+}
+
+.text-ubc-blue-sea {
+  color: #003A79;
+}
+
+.text-ubc-blue-cobalt {
+  color: #0055b7;
+}
+
+.text-ubc-blue-neptune {
+  color: #40b4e5;
+}
+
+.text-ubc-blue-cornflower {
+  color: #97d4e9;
+}
+
+.text-ubc-blue-polar {
+  color: #def1f8;
+}
+
+.text-ubc-blue-frost {
+  color: #f6fbfd;
+}

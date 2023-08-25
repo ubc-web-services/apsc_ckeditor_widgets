@@ -1,0 +1,56 @@
+/* General styles - ideally should be moved to theme, but may be better here in log run */
+/* fix for text colors when focussed in edit mode */
+.ck-editor__nested-editable_focused > * {
+  color: #212121 !important;
+}
+
+/* Misc styles */
+
+.unit-icon {
+  display: inline;
+}
+
+.widget-svgicon {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+/* style for expanded colorbox */
+@media (min-width: 980px) {
+
+  .align-expanded:not(.ck-widget) {
+    margin-left: -6rem;
+    margin-right: -6rem;
+  }
+
+}
+
+
+/* legacy style for columns */
+@media (min-width: 960px) {
+
+  .md--flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    /* for CKE4 widget support, we only apply the style if the gap class isn't there */
+    .md--flex-grid:not(.gap-0, .gap-4, .gap-8, .gap-12, .gap-16) {
+      gap: 1.5rem;
+    }
+
+  .md--flex-grid .md--flex-1 {
+    flex: 1;
+  }
+
+  .md--flex-grid .md--flex-2 {
+    flex: 2;
+  }
+
+}

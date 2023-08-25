@@ -1,0 +1,6 @@
+# This has 'change-this-to-info' in the filename instead of 'info' so this
+name: APSC CKEditor Widgets
+type: module
+description: "Adds wysiwyg buttons and functions for CKEditor"
+package: CKEditor 5
+core_version_requirement: ^9 || ^10

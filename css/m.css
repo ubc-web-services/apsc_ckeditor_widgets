@@ -1,0 +1,64 @@
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0m;
+}
+
+.my-atom-1 {
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+.my-atom-2 {
+  margin-top: 1rem;
+  margin-bottom: 15rem;
+}
+
+.my-atom-3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-atom-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-molecule-1 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-molecule-2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-molecule-3 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-molecule-4 {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.my-organism-1 {
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.my-organism-2 {
+  margin-top: 6rem;
+  margin-bottom:6rem;
+}
+
+.my-organism-3 {
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+
+.my-organism-4 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}

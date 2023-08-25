@@ -1,0 +1,60 @@
+# This adds the plugin JavaScript to the page.
+
+# Add all required styles and JS to the public facing site
+apsc_ckeditor_widgets.ui:
+  css:
+    theme:
+      css/bg.color.css: { }
+      css/drop.shadow.css: {}
+      css/m.css: { }
+      css/p.css: { }
+      css/apsc.widget.default.styles.css: { }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+# Color Box
+apsc_color_box:
+  css:
+    theme:
+      css/apsc.color.box.css: { }
+  js:
+    js/build/apscColorBox.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+apsc_color_box.admin:
+  css:
+    theme:
+      css/apsc.color.box.admin.css: { }
+
+# Divided Columns
+apsc_divided_columns:
+  css:
+    theme:
+      css/apsc.divided.columns.css: { }
+  js:
+    js/build/apscDividedColumns.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+apsc_divided_columns.admin:
+  css:
+    theme:
+      css/apsc.divided.columns.admin.css: { }
+
+# Expand Region
+apsc_expand:
+  css:
+    theme:
+      css/apsc.expand.css: { }
+  js:
+    js/build/apscExpand.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+apsc_expand.admin:
+  css:
+    theme:
+      css/apsc.expand.admin.css: { }

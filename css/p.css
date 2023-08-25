@@ -1,0 +1,51 @@
+.p-0 {
+  padding: 0;
+}
+
+.p-atom-1 {
+  padding: .75rem;
+}
+
+.p-atom-2 {
+  padding: 1rem;
+}
+
+.p-atom-3 {
+  padding: 1.5rem;
+}
+
+.p-atom-4 {
+  padding: 2rem;
+}
+
+.p-molecule-1 {
+  padding: 2.5rem;
+}
+
+.p-molecule-2 {
+  padding: 3rem;
+}
+
+.p-molecule-3 {
+  padding: 4rem;
+}
+
+.py-molecule-4 {
+  padding: 4.5rem;
+}
+
+.p-organism-1 {
+  padding: 5.5rem;
+}
+
+.p-organism-2 {
+  padding: 6rem;
+}
+
+.p-organism-3 {
+  padding: 7.5rem;
+}
+
+.p-organism-4 {
+  padding: 10rem;
+}

@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Contains apsc_ckeditor_widgets.module.
+ */
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function apsc_ckeditor_widgets_page_attachments_alter(array &$page) {
+  // Attaches css assets globally.
+  $page['#attached']['library'][] = 'apsc_ckeditor_widgets/apsc_ckeditor_widgets.ui';
+}

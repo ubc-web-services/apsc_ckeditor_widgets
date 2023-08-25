@@ -1,0 +1,15 @@
+/* Editor-specific styles */
+.widget-divided-columns.ck-widget {
+    position: relative;
+}
+
+.widget-divided-columns.ck-widget::after {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    content: 'Divided Columns';
+    background-color: #ccc;
+    color: #111;
+    padding: .5em;
+    font-size: .5rem;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "drupal-ckeditor5",
+  "version": "1.0.0",
+  "description": "UBC CKEditor custom widget plugins",
+  "author": "James O'Toole",
+  "license": "GPL-2.0-or-later",
+  "source": "src/js_v4/apsc_ckeditor_widgets.js",
+  "main": "js/v4/apsc_ckeditor_widgets.js",
+  "module": "js/v4/apsc_ckeditor_widgets.module.js",
+  "scripts": {
+    "watch": "webpack --mode development --watch",
+    "build": "webpack",
+    "build_v4": "parcel build"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-dev-utils": "^30.0.0",
+    "ckeditor5": "~34.1.0",
+    "parcel": "latest",
+    "raw-loader": "^4.0.2",
+    "terser-webpack-plugin": "^5.2.0",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.4.0"
+  }
+}

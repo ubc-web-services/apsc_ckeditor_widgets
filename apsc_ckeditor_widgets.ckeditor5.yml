@@ -1,0 +1,67 @@
+# If using yml to configure plugins, rename this to {module_name}.ckeditor5.yml.
+# If using annotations, this file can be removed.
+# @see https://www.drupal.org/docs/drupal-apis/plugin-api/annotations-based-plugins
+#   For information on using annotations to define plugins.
+# @see the CKEditor 5 module's README.md for more details regarding plugin
+#   configuration options.
+
+apsc_ckeditor_widgets_apsccolorbox:
+  ckeditor5:
+    plugins:
+      - apscColorBox.ApscColorBox
+    config:
+      apscColorBox:
+        contentToolbar:
+          - 'apscColorBoxAlignExpanded'
+          - 'apscColorBoxAlignFull'
+          - 'apscColorBoxAlignLeft'
+          - 'apscColorBoxAlignCenter'
+          - 'apscColorBoxAlignRight'
+          - '|'
+          - 'apscColorBoxPaddingOptions'
+          - '|'
+          - 'apscColorBoxMarginOptions'
+          - '|'
+          - 'apscColorBoxBackgroundOptions'
+          - '|'
+          - 'apscColorBoxShadowToggle'
+  drupal:
+    label: Color Box
+    library: apsc_ckeditor_widgets/apsc_color_box
+    admin_library: apsc_ckeditor_widgets/apsc_color_box.admin
+    toolbar_items:
+      ApscColorBox:
+        label: APSC Color Box
+    elements:
+      - <div>
+      - <div class>
+
+apsc_ckeditor_widgets_dividedcolumns:
+  ckeditor5:
+    plugins:
+      - apscDividedColumns.ApscDividedColumns
+  drupal:
+    label: Divided Columns
+    library: apsc_ckeditor_widgets/apsc_divided_columns
+    admin_library: apsc_ckeditor_widgets/apsc_divided_columns.admin
+    toolbar_items:
+      ApscDividedColumns:
+        label: Divided Columns
+    elements:
+      - <div>
+      - <div class>
+
+apsc_ckeditor_widgets_expand:
+  ckeditor5:
+    plugins:
+      - apscExpand.ApscExpand
+  drupal:
+    label: Expand Region
+    library: apsc_ckeditor_widgets/apsc_expand
+    admin_library: apsc_ckeditor_widgets/apsc_expand.admin
+    toolbar_items:
+      ApscExpand:
+        label: Expand Region
+    elements:
+      - <div>
+      - <div class>

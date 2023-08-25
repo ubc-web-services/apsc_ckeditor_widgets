@@ -1,0 +1,15 @@
+/* Editor-specific styles */
+.widget-expand.ck-widget {
+    position: relative;
+}
+
+.widget-expand.ck-widget::after {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    content: 'Expanded region';
+    background-color: #ccc;
+    color: #111;
+    padding: .5em;
+    font-size: .5rem;
+}
