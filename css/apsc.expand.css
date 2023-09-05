@@ -1,6 +1,8 @@
 /* Editor-specific styles */
 .widget-expand.ck-widget {
     position: relative;
+    /* add padding inside so that embedded widgets don't overlap */
+    padding: 2rem;
 }
 
 .widget-expand.ck-widget::after {
