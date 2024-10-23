@@ -38,19 +38,19 @@ export default class ApscDividedColumnsEditing extends Plugin {
   }
 
   init() {
-
+    const editor = this.editor;
     this._defineSchema();
     this._defineConverters();
-    this.editor.model.schema.extend('apscDividedColumns', {
+    editor.model.schema.extend('apscDividedColumns', {
       allowAttributes: ['class']
     });
-    this.editor.conversion.attributeToAttribute({
+    editor.conversion.attributeToAttribute({
       model: 'class',
       view: 'class'
     });
-    this.editor.commands.add(
+    editor.commands.add(
       'apscDividedColumns',
-      new ApscDividedColumnsCommand(this.editor),
+      new ApscDividedColumnsCommand(editor),
     );
   }
 

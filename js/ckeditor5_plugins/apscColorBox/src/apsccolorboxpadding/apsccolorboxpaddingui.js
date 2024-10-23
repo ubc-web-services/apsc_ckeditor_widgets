@@ -8,7 +8,7 @@ import {
 import {
   addListToDropdown,
   createDropdown,
-  Model
+  ViewModel
 } from 'ckeditor5/src/ui';
 import {
   Collection
@@ -73,7 +73,7 @@ function _prepareListOptions(options, command) {
   for (const option of alloptions) {
     const def = {
       type: 'button',
-      model: new Model({
+      model: new ViewModel({
         commandName: activecommand,
         commandParam: option.value,
         label: option.label,

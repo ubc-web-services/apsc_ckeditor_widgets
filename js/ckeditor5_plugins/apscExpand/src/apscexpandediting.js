@@ -36,19 +36,19 @@ export default class ApscExpandEditing extends Plugin {
   }
 
   init() {
-
+    const editor = this.editor;
     this._defineSchema();
     this._defineConverters();
-    this.editor.model.schema.extend('apscExpand', {
+    editor.model.schema.extend('apscExpand', {
       allowAttributes: ['class']
     });
-    this.editor.conversion.attributeToAttribute({
+    editor.conversion.attributeToAttribute({
       model: 'class',
       view: 'class'
     });
-    this.editor.commands.add(
+    editor.commands.add(
       'apscExpand',
-      new ApscExpandCommand(this.editor),
+      new ApscExpandCommand(editor),
     );
   }
 

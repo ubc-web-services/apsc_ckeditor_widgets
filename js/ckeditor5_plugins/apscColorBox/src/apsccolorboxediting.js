@@ -41,6 +41,10 @@ export default class ApscColorBoxEditing extends Plugin {
 
   init() {
     const editor = this.editor;
+    editor.conversion.attributeToAttribute({
+      model: 'class',
+      view: 'class'
+    });
     this._defineSchema();
     this._defineConverters();
     editor.commands.add(
