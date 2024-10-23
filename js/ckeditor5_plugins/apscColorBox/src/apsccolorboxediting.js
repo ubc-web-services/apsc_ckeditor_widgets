@@ -47,6 +47,9 @@ export default class ApscColorBoxEditing extends Plugin {
     });
     this._defineSchema();
     this._defineConverters();
+    editor.model.schema.extend('apscColorBox', {
+      allowAttributes: ['class']
+    });
     editor.commands.add(
       'apscColorBox',
       new ApscColorBoxCommand(editor),
@@ -111,7 +114,11 @@ export default class ApscColorBoxEditing extends Plugin {
     // processed by CKEditor, then CKEditor recognizes and loads it as a
     // <apscColorBox> model.
     conversion.for('upcast').elementToElement({
-      model: 'apscColorBox',
+      model: (viewElement, { writer }) => {
+        return writer.createElement('apscColorBox', {
+            class: viewElement.getAttribute('class')
+        });
+      },
       view: {
         name: 'div',
         classes: 'widget-color-box',

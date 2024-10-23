@@ -112,7 +112,11 @@ export default class ApscExpandEditing extends Plugin {
     // processed by CKEditor, then CKEditor recognizes and loads it as a
     // <apscExpand> model.
     conversion.for('upcast').elementToElement({
-      model: 'apscExpand',
+      model: (viewElement, { writer }) => {
+        return writer.createElement('apscExpand', {
+            class: viewElement.getAttribute('class')
+        });
+      },
       view: {
         name: 'div',
         classes: ['widget-expand'],

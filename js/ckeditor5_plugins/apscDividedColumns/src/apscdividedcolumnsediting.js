@@ -121,7 +121,11 @@ export default class ApscDividedColumnsEditing extends Plugin {
     // processed by CKEditor, then CKEditor recognizes and loads it as a
     // <apscDividedColumns> model.
     conversion.for('upcast').elementToElement({
-      model: 'apscDividedColumns',
+      model: (viewElement, { writer }) => {
+        return writer.createElement('apscDividedColumns', {
+            class: viewElement.getAttribute('class')
+        });
+      },
       view: {
         name: 'div',
         classes: ['widget-divided-columns'],
