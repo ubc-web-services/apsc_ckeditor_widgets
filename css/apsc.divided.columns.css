@@ -13,3 +13,8 @@
     padding: .5em;
     font-size: .5rem;
 }
+
+/* fade label when widget is focussed */
+.widget-divided-columns.ck-widget:has(.ck-editor__nested-editable_focused)::after  {
+  opacity: .1;
+}

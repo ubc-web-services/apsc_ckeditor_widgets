@@ -4,6 +4,13 @@
   color: #212121 !important;
 }
 
+.ck-editor__nested-editable_focused.bg-gradient,
+.ck-editor__nested-editable.bg-gradient:focus,
+.ck-editor__nested-editable_focused.bg-gradient--unit,
+.ck-editor__nested-editable.bg-gradient--unit:focus {
+  background-image: none !important;
+}
+
 /* Misc styles */
 
 .unit-icon {

@@ -1,75 +1,17 @@
 /* background colours (with card overrides */
-.bg-unit-primary:not(.widget-card),
-.widget-card.bg-unit-primary .ubc-card {
-  background-color: var(--color-primary);
-}
 
-.bg-unit-secondary:not(.widget-card),
-.widget-card.bg-unit-secondary .ubc-card {
-  background-color: var(--color-secondary);
-}
-
-.bg-unit-tertiary:not(.widget-card),
-.widget-card.bg-unit-tertiary .ubc-card {
-  background-color: var(--color-tertiary);
-}
-
-.bg-unit-accent:not(.widget-card),
-.widget-card.bg-unit-accent .ubc-card {
-  background-color: var(--color-accent);
-}
-
-.bg-white:not(.widget-card),
-.widget-card.bg-grey-100 .ubc-card {
-  background-color: #fff;
-}
-
-.bg-grey-100:not(.widget-card),
-.widget-card.bg-grey-100 .ubc-card {
-  background-color: #f5f5f5;
-}
-
-.bg-ubc-blue:not(.widget-card),
-.widget-card.bg-ubc-blue .ubc-card {
-  background-color: #002145;
-}
-
-.bg-ubc-blue-sea:not(.widget-card),
-.widget-card.bg-ubc-blue-sea .ubc-card {
-  background-color: #003A79;
-}
-
-.bg-ubc-blue-cobalt:not(.widget-card),
-.widget-card.bg-ubc-blue-cobalt .ubc-card {
-  background-color: #0055b7;
-}
-
-.bg-ubc-blue-neptune:not(.widget-card),
-.widget-card.bg-ubc-blue-neptune .ubc-card {
-  background-color: #40b4e5;
-}
-
-.bg-ubc-blue-cornflower:not(.widget-card),
-.widget-card.bg-ubc-blue-cornflower .ubc-card {
-  background-color: #97d4e9;
-}
-
-.bg-ubc-blue-polar:not(.widget-card),
-.widget-card.bg-ubc-blue-polar .ubc-card {
-  background-color: #def1f8;
-}
-
-.bg-ubc-blue-frost:not(.widget-card),
-.widget-card.bg-ubc-blue-frost .ubc-card {
-  background-color: #f6fbfd;
-}
-
-.bg-gradient--unit:not(.widget-card),
-.widget-card.bg-gradient--unit .ubc-card {
+.bg-gradient--unit:not(.widget-card, .widget-column-options),
+.widget-card.bg-gradient--unit .ubc-card,
+.widget-column-options.bg-gradient--unit .widget-region-one,
+.widget-column-options.bg-gradient--unit .widget-region-two,
+.widget-column-options.bg-gradient--unit .widget-region-three {
 	background: linear-gradient(227deg, var(--color-grad--light) 2.5%, var(--color-grad--mid) 33%, var(--color-grad--dark) 80%);
 }
 
-.bg-gradient:not(.widget-card),
-.widget-card.bg-gradient .ubc-card {
+.bg-gradient:not(.widget-card, .widget-column-options),
+.widget-card.bg-gradient .ubc-card,
+.widget-column-options.bg-gradient .widget-region-one,
+.widget-column-options.bg-gradient .widget-region-two,
+.widget-column-options.bg-gradient .widget-region-three {
 	background: linear-gradient(227deg, #0055b7 2.5%, #003A79 33%, #002145 80%);
 }
