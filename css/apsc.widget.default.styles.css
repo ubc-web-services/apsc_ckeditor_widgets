@@ -61,3 +61,8 @@
   }
 
 }
+
+/* fix for default figure margins when cke adds a figure element to media in edit mode */
+.ck-editor .widget-card figure.drupal-media {
+  margin: 0;
+}
